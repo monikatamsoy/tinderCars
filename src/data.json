@@ -1,0 +1,91 @@
+[
+    {
+        "id" : 0,
+        "model" : "Prius c",
+        "maker" : "Toyota",
+        "full_name" : "Toyota Prius c '2012–14",
+        "image" :  "https://www.carimagery.com/img/v2/12424.jpg",
+        "liked": [],
+        "superLiked": [],
+        "disliked": []
+        
+    },
+    {
+        "id" : 1,
+        "model" : "Tercel Sedan [North America]",
+        "maker" : "Toyota",
+        "full_name" : "Toyota Tercel Sedan [North America] '1994–98",
+        "image" : "https://www.carimagery.com/img/v2/12825.jpg",
+        "liked": [],
+        "superLiked": [],
+        "disliked": []
+        
+
+    },
+    {
+        "id" : 2,
+        "model" : "2009–  Matrix S",
+        "maker" : "Toyota",
+        "full_name" : "Toyota Matrix S '2008–11",
+        "image" : "https://www.carimagery.com/img/v2/10979.jpg",
+        "liked": [],
+        "superLiked": [],
+        "disliked": []
+
+    },
+    {
+        "id" : 3,
+        "model" : "Tercel Sedan [North America]",
+        "maker" : "Toyota",
+        "full_name" : "Toyota Tercel Sedan [North America] '1994–98",
+        "image" : "https://www.carimagery.com/img/v2/12825.jpg",
+        "liked": [],
+        "superLiked": [],
+        "disliked": []
+
+    },
+    {
+        "id" : 4,
+        "model" : "Allex (E120)",
+        "maker" : "Toyota",
+        "full_name" : "Toyota Allex (E120) '2004–06",
+        "image" : "https://www.carimagery.com/img/v2/12417.jpg",
+        "liked": [],
+        "superLiked": [],
+        "disliked": []
+    },
+    {
+        "id" : 5,
+        "model" : "Auris 5-door",
+        "maker" : "Toyota",
+        "full_name" : "Toyota Auris 5-door '2010–12",
+        "image" : "https://www.carimagery.com/img/v2/12431.jpg",
+        "liked": [],
+        "superLiked": [],
+        "disliked": []
+
+    },
+    {
+        "id" : 6,
+        "model" : "Front panel Fortuner",
+        "maker" : "Toyota",
+        "full_name" : "Front panel Toyota Fortuner '2005–08",
+        "image" : "https://www.carimagery.com/img/v2/12602.jpg",
+        "liked": [],
+        "superLiked": [],
+        "disliked": []
+
+    },
+    {
+        "id" : 7,
+        "model" : "Roomy",
+        "maker" : "Toyota",
+        "full_name" : "Toyota Roomy '2016–pr.",
+        "image" : "https://www.carimagery.com/img/v2/1989.jpg",
+        "liked": [],
+        "superLiked": [],
+        "disliked": []
+
+    }
+    
+]
