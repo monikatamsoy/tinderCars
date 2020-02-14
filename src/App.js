@@ -3,7 +3,8 @@ import Header from './components/Header';
 import Car from './components/Car';
 import Activity from './components/Activity';
 import data from './data.json';
-import { render } from '@testing-library/react';
+import More from './components/More'
+
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
   const[disliked,setDisliked] = useState([]);
   const[superLiked,setSuperLiked] = useState([]);
   const activeCar = 0;
+  const[flag,setFlag] = useState();
 
   const removedCarFromDataSrc = (carSource, carId) => 
     carSource.filter(cars => cars.id !== carId);
@@ -21,15 +23,17 @@ const App = () => {
     const newLiked = [...liked];
     const newSuperLiked = [...superLiked];
     const newDisliked = [...disliked];
-
+    
     switch(action){
+      
       case 'ADD_TO_LIKED_CARS':
         if(!cars[activeCar].liked.includes(carId)){
           newCars[activeCar].liked.push(carId);
           newLiked.push(data[carId]);
 
           setLiked(newLiked);
-          setCars(removedCarFromDataSrc(cars,carId))
+          setCars(removedCarFromDataSrc(cars,carId));
+          setFlag({flag : 1})
         }
         break;
       case 'ADD_TO_DISLIKED_CARS':
@@ -39,6 +43,7 @@ const App = () => {
   
             setDisliked(newDisliked);
             setCars(removedCarFromDataSrc(cars, carId));
+            setFlag({flag : 0})
           }
           break;
         case 'ADD_TO_SUPERLIKED_CARS':
@@ -48,6 +53,7 @@ const App = () => {
   
             setSuperLiked(newSuperLiked);
             setCars(removedCarFromDataSrc(cars, carId));
+            setFlag({flag : 1})
           }
           break;
           default:
@@ -64,8 +70,13 @@ const App = () => {
         
           <Header />
         </div>
-        <div className="car-body">
-        {cars[1] ? (
+        <div className="card-body">
+        {cars[1] ? ( flag ? <More 
+        key = {cars[1].id}
+        car={cars[1]}
+        modifyChoices={modifyChoices}
+        liked={liked}
+          /> :
           <Car
           key={cars[1].id}
           car={cars[1]}
@@ -77,6 +88,7 @@ const App = () => {
           liked={liked}
           superLiked={superLiked}
         /> )}
+        
 
         </div> 
         </div>

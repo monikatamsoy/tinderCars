@@ -1,13 +1,13 @@
 import React from 'react';
 import Logo from './Logo';
-import Activity from './Activity';
+
 
 const Header = () => (
     <header className="container">
         <div className="card"> 
         <div className= "card-header" >
-        <ul class="nav nav-tabs card-header-tabs">
-        <li class="nav-item">
+        <ul className="nav nav-tabs card-header-tabs">
+        <li className="nav-item">
             <button type="button">
                 <img src="/images/misc/user.png" alt="User Profile"/>
             </button>
