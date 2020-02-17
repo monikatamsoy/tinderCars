@@ -4,11 +4,11 @@ import React from 'react';
 
 
 const Like = (props) => (<button type="button" onClick={() => {
-    console.log("props", props);
+    //console.log("props", props);
     return (props.Choices(props.car, 'Like'));
 } }>
 
-    <img src="images/misc/like.png" alt="Like car" />
+    <img src="/misc/like.png" alt="Like car" />
 
 </button>);
 

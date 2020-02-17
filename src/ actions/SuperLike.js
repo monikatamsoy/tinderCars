@@ -8,7 +8,7 @@ const SuperLike = ({ activeCar, Choices}) => {
         return (Choices('SuperLike'));
     } }>
 
-        <img src="images/misc/like.png" alt="Like car" />
+        <img src="/misc/superLike.png" alt="SuperLike car" />
 
     </button>);
 };

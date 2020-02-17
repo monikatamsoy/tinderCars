@@ -5,11 +5,8 @@ import SuperLike from './../ actions/SuperLike';
 import Dislike from './../ actions/Dislike';
 
 const Actions = (props) => {
-    // const {
-    //     car, Choices
-    //   } = props;
-
-    return (<div id="actions">
+    
+    return (<div className="App" id="actions">
         <Like 
         {...props} />
         <Dislike 

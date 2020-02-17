@@ -13,15 +13,15 @@ const App = () => {
   
    
    const LikeCar = (activeCar)=>{
-    console.log('old state', cars);
+    
     cars.forEach(car => { 
       if(car.id === activeCar) {
         car.like = car.visited = true;
         
       }
-      //console.log(cars[activeCar].name)
+      
     });
-    
+    setCars(cars)
    }
    const DislikeCar = (activeCar)=>{
     cars.forEach(car => { 
@@ -30,7 +30,7 @@ const App = () => {
         
       }
     });
-  
+    setCars(cars)
    }
    const SuperLikeCar = (activeCar)=>{
     cars.forEach(car => { 
@@ -38,7 +38,9 @@ const App = () => {
         car.like = car.visited = true;
         
       }
-    });
+      
+    })
+    setCars(cars);
   
    }
    const Choices = (activeCar, action) => {
@@ -50,15 +52,17 @@ const App = () => {
       case 'SuperLike':
           {SuperLikeCar(activeCar.id)};
     }
-    setCars(cars.splice(0,1))
+    setCars(cars.shift())
   }
-    //debugger;
+    //console.log(cars)
   return (
     <div className="App">
       <header className="App-header">
         {cars[0]? <View 
         car={cars[activeCar]}
-        Choices={Choices}/> : <Activity />}
+        Choices={Choices}/> : <Activity 
+        cars={data}
+        />}
       </header>
     </div>
   );

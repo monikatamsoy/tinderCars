@@ -5,12 +5,13 @@ function View(props) {
   const {
     car, Choices
   } = props;
-    const { id, name, image } = car;
+    const { id, model, maker, image } = props.car;
+  //console.log(car.id)
     return(
         <div className="container" >
-            <img src={image} className= "rounded mx-auto d-block" alt = {name} />
+            <img src={car.image} className= "rounded mx-auto d-block" alt = {car.model} />
             <div className="description">
-            <h3> {name} </h3>      
+            <h3> {car.model} </h3>      
             
           </div>
         <Actions 
